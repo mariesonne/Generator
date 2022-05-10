@@ -1,20 +1,28 @@
 <!doctype html>
-<html lang="en">
+<html lang="en"> <!-- Hjemmensiden er på engelsk, og derfor er generatoren naturligvis også -->
     <head>
-        <title>test</title>
-        <link href="css.css" rel="stylesheet">
-        <link rel="preconnect" href="https://fonts.googleapis.com"> 
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <meta charset="utf-8">
+        <title>Generator</title>
+        <link href="css.css" rel="stylesheet"> <!-- link til stylesheet/css -->
+        <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- link til Google Fonts -->
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <!-- link til Google Fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet"> <!-- link til Google Fonts/Open Sans -->
     </head>
     
 <body>
-    <div class="container">
-        <div id="guideDisplay">
-            <p id="placeholder">?</p><!-- Guide vises her -->
+    <div class="container"> <!-- En div der indeholder både placeholder og knap, så det let kan styles -->
+        
+        <div id="guideDisplay"> <!-- Indeholder kun placeholder -->
+        
+            <p id="placeholder">?</p><!-- Det tilfældige projekt vises her -->
+        
         </div>
-        <button id="newguide" onclick="newGuide()">find your next project!</button>
-        <script src="javascript.js"></script>
+        
+        <button id="newguide" onclick="newGuide()">find your next project!</button> <!-- Knap med onclick attribut, som fortæller at der skal ske noget når der klikkes på knappen -->
+        
     </div>
+    
+    <script src="javascript.js"></script> <!-- Link til scriptet -->
+    
 </body>
 </html>

@@ -1,3 +1,6 @@
+//Array med flere strenge, som er kommasepareret
+//Hver streng indeholder et strikkeprojekt eller en strikkeguide
+
 var guides = [
     '<h3>A cardigan!</h3>' + 'Challenge time! Make a cardigan ONLY out of our' + '<a href="http://nordicskyyarn.com/index.php/oulu/"> Oulu</a>' + ' yarn',
     
@@ -11,14 +14,13 @@ var guides = [
     
     '<h3>A scrunchie!</h3>' + 'It\'s a super fun small project! If you have any yarn "leftovers", feel free to use them!',
     
-    '<h3>Make a simple hat!</h3>' + 'You can make a basic white out of ' + '<a href="http://nordicskyyarn.com/index.php/sundsvall/">Sundsvall</a>' + ' or hand-dye it in your favorite colors!'
-    
-    
-    
+    '<h3>Make a simple hat!</h3>' + 'You can make a basic white hat out of ' + '<a href="http://nordicskyyarn.com/index.php/sundsvall/">Sundsvall</a>' + ' or hand-dye it in your favorite colors before!'  
     
 ]
 
+// Funktion: Der skal vises en tilfældig streng projekt hver gang, der klikkes på knappen
+
 function newGuide() {
-var randomNumber = Math.floor(Math.random() * (guides.length));
-document.getElementById('guideDisplay').innerHTML = guides[randomNumber];
+var randomNumber = Math.floor(Math.random() * (guides.length)); // Der tilføjes en Math.random som parameter til Math.floor for at generer et tilfældigt tal. Math.random ganges med længden på mit array - så kan jeg tilføje og fjerne strenge uden at det påvirker funktionen. 
+document.getElementById('guideDisplay').innerHTML = guides[randomNumber]; //Ved hjælp af dokument objekt modellen udskiftes placeholder-teksten med en tilfældig streng
 }

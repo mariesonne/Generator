@@ -1,35 +1,37 @@
+/* Styling af container som indeholder både placeholder og knap */
+
 .container {
-    margin: auto;
-    width: 50%;
-    padding: 10px;
-    text-align: center;
+    margin: auto; /* Vandret centreret */
+    padding: 10px; /* En lille afstand til øvrige elementer */
+    text-align: center; /* Centrer al tekst */
 }
 
+/* Styling af placeholder og den tekst der vises når der trykkes på knappen */
 
 #guideDisplay {
-    min-height: 70px;
-    
-} 
-
-#guideDisplay {
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 300;
-    color: #212730;
+    font-family: 'Open Sans', sans-serif; /* Angiver hvilken font der skal anvendes */
+    font-weight: 300; /* Angiver tykkelsen af skrfttypen */ 
+    color: #212730; /* Farve på teksten */
+    min-height: 75px; /* Der er sat en højde på, for at undgå at knappen flyver op og ned alt efter hvor meget tekst der er */
 }
+
+/* Styling af a-tags i placeholderen og i den tekst der vises - altså hyperlinks */
 
 #guideDisplay a {
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
     color: #7aa6b1;
-    text-decoration: none;
+    text-decoration: none; /* Fjerner standard styling af links - f.eks. understreg*/
 }
 
+/* Styling af a-tags i placeholderen når musen køres over */
+
 #guideDisplay a:hover {
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 300;
-    color: #2F4D60;
-    text-decoration: none;
+    color: #2F4D60; /* Farven ændrer sig */
 }
+
+
+/* Styling af h3 i placeholderen */
 
 #guideDisplay h3 {
     font-family: 'Open Sans', sans-serif;
@@ -39,33 +41,39 @@
     color: #2F4D60;
 }
 
-
-
-#newguide {
-    background-color: #2F4D60;
-    color: #fff;
-    border: none;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 400;
-    letter-spacing: 3.5px;
-    text-transform: uppercase;
-    font-size: 0.9em;
-    margin-top: 30px;
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-   align-items: center;
-    
-}
-
-#newguide:hover {
-    background-color: #A8C4CB;
-}
+/* Styling af udelukkende placeholderen - det her påvirker altså ikke den tekst der kommer frem */
 
 #placeholder {
     min-height: 75px;
     font-size: 2em;
   	font-weight: 500;
-  color: #2F4D60;
+    color: #2F4D60;
 }
+
+
+/* Styling af knappen */
+
+#newguide {
+    background-color: #2F4D60; /* Farven på knappen */
+    color: #fff; /* Farven på teksten i knappen */
+    border: none; /* Fjerner standard ramme */
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    letter-spacing: 3.5px; /* Øger mellemrum mellem hvert bogstav*/
+    text-transform: uppercase; /* Laver alle bogstaver store*/
+    font-size: 0.9em; 
+    margin-top: 30px; /* Laver større afstand til øvrige elementer udenfor knappen*/
+    padding-left: 30px; /* Øger aftanden inde i knappen (til venstre)*/
+    padding-right: 30px;/* Øger aftanden inde i knappen (til højre)*/
+    padding-top: 5px;/* Øger aftanden inde i knappen (over)*/
+    padding-bottom: 5px;/* Øger aftanden inde i knappen (under)*/
+}
+
+
+/* Styling af knappen når musen køres over */
+
+#newguide:hover {
+    background-color: #A8C4CB; /* Knappens farve ændres */
+}
+
+
