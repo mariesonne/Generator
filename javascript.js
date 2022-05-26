@@ -22,5 +22,5 @@ var guides = [
 
 function newGuide() {
 var randomNumber = Math.floor(Math.random() * (guides.length)); // Der tilføjes en Math.random som parameter til Math.floor for at generer et tilfældigt tal. Math.random ganges med længden på mit array - så kan jeg tilføje og fjerne strenge uden at det påvirker funktionen. 
-document.getElementById('guideDisplay').innerHTML = guides[randomNumber]; //Retter på dokument objekt modellen og udskifter placeholder-teksten med en tilfældig streng
+document.getElementById('guideDisplay').innerHTML = guides[randomNumber]; //Ændre på dokument objekt modellen og udskifter placeholder-teksten med en tilfældig streng
 }
